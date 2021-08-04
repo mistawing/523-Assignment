@@ -345,7 +345,6 @@ class MainActivity : AppCompatActivity() {
             return
         }
         try {
-            var coor = ""
             val face1 = faces1[0].boundingBox
             val face2 = faces2[0].boundingBox
             val width = min(face1.width(), face2.width())
@@ -369,7 +368,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             withContext(Main) {
-                displayText(coor)
                 previewPane1.background = BitmapDrawable(getResources(), newImageBitmap1); //previewPane is the ImageView from the layout
                 previewPane2.background = BitmapDrawable(getResources(), newImageBitmap2); //previewPane is the ImageView from the layout
             }
