@@ -251,11 +251,16 @@ class MainActivity : AppCompatActivity() {
                 val source = ImageDecoder.createSource(contentResolver, localURI!!)
                 ImageDecoder.decodeBitmap(source)
             }
-            previewPane.background= BitmapDrawable(getResources(), imageBitmap);
+            previewPane.background= BitmapDrawable(getResources(), imageBitmap)
 //            previewPane?.setImageBitmap(imageBitmap) //previewPane is the ImageView from the layout
 
         } catch (e: IOException) {
         }
+    }
+
+    fun reloadImage(view: View) {
+        tryReloadAndDetectInImage(1)
+        tryReloadAndDetectInImage(2)
     }
 
     fun startEditIntentForResult(view: View) {

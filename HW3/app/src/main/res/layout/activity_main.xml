@@ -120,6 +120,15 @@ it must specify the Android Resource XML namespace at http://schemas.android.com
         app:layout_constraintStart_toEndOf="@+id/pictureBut2"
         app:layout_constraintTop_toTopOf="@+id/choseBut" />
 
+    <Button
+        android:id="@+id/undoBut"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:text="undo"
+        android:onClick="reloadImage"
+        app:layout_constraintStart_toEndOf="@+id/editBut"
+        app:layout_constraintTop_toTopOf="@+id/choseBut" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -128,5 +137,6 @@ it must specify the Android Resource XML namespace at http://schemas.android.com
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/previewPane1" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
