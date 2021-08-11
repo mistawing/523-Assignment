@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "286615414640",
+    "project_id": "eep523-hw3-72178",
+    "storage_bucket": "eep523-hw3-72178.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286615414640:android:3621793e9e9f01e99591b5",
+        "android_client_info": {
+          "package_name": "edu.uw.eep523.summer2021.takepictures"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "286615414640-pn7m7hb5q0l0i5d34a6rpi9mdnrind26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADIqk3euAYh860pkx8_A0118UE4RaGBfc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "286615414640-pn7m7hb5q0l0i5d34a6rpi9mdnrind26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
