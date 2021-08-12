@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         sensorEnabled = true
         val stepSensor = sensorManager?.getDefaultSensor(Sensor.TYPE_STEP_COUNTER)
         if (stepSensor == null) {
-            Toast.makeText(this, "No sensor detected on this device", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Accelerator not detected on this device", Toast.LENGTH_SHORT).show()
         } else {
             sensorManager?.registerListener(this, stepSensor, SensorManager.SENSOR_DELAY_UI)
         }
@@ -102,13 +102,10 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         }
 
         stepsTaken.setOnLongClickListener {
-
             previousTotalSteps = totalSteps
-
             stepsTaken.text = 0.toString()
             sensorEnabled = true
             saveData()
-
             true
         }
     }
